@@ -20,7 +20,7 @@
                 <h1>Cristals Collector!</h1>
             </div>
         </div>
-        <div class="row">
+        <div class="row top-section">
             <div class="col-8 instructions">
                 <h2>Instructions</h2>
                 <p>You will be given a random nnumber at the start of the game.</p>
@@ -32,18 +32,42 @@
             <div class="col-4">
                 
                 <div class="row">
-                    <div id="wins" class="col-6"></div>
-                    <div id="losses" class="col-6"></div>
+                    <div class="col-6 text-center">
+                        <div id="wins" class="points"></div>
+                        <h2>WINS</h2>
+                    </div>
+                    <div class="col-6 text-center">
+                        <div id="losses" class="points"></div>
+                        <h2>LOSSES</h2>
+                    </div>
                 </div>
             </div>
+            <hr>
         </div>
-        <div class="row">
-            <div class="col-6">
+        <div class="row bottom-section">
+            <div class="col-3">
                 <div id="random-num"></div>
             </div>
+            <div class="col-3">
+                <div id="score">
+                        <h3>Your total scrore is:</h3>
+                </div>
+            </div>
             <div class="col-6">
-                <h3>Your total scrore is:</h3>
-                <div id="score"></div>
+                <div class="row">
+                    <div class="col-3 stone">
+                        <img src="./assets/images/stone-1.svg" alt="">
+                    </div>
+                    <div class="col-3 stone">
+                        <img src="./assets/images/stone-2.svg" alt="">
+                    </div>
+                    <div class="col-3 stone">
+                        <img src="./assets/images/stone-3.svg" alt="">
+                    </div>
+                    <div class="col-3 stone">
+                        <img src="./assets/images/stone-4.svg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
