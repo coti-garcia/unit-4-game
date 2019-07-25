@@ -73,4 +73,18 @@ p{
     background: #ffa300;
     border-radius: 50px;
     margin: 10px auto;
+    color: #FFF;
+    font-size: 60px;
 }
+
+#status-message h6 {
+    color: teal;
+    font-weight: 700;
+    margin-top: 16px;
+    font-size: 30px;
+}
+#status-message p {
+    color: teal;
+    font-weight: 700;
+}
+

@@ -40,11 +40,19 @@ $(document).ready(function() {
         if(userGuess === randomNum ){
             wins++;
             $("#wins").text(wins);
+            $("#status-message").append(`<h6>YOU WON!</h6>`)
+            $("#status-message").append(`<p>Play again, you have new number!</p>`)
             newGame();
             
         } else if(userGuess > randomNum ){
             losses++;
             $("#losses").text(losses);
+            $("#status-message").append(`<h6>Ups! Sorry dude!</h6>`)
+            $("#status-message").append(`<button type="button" class="btn btn-outline-danger">Click me for a new number!</button>`)
+            $(".btn" ).click(function() {
+                newGame();
+                $("#status-message").empty();
+            });
         }
     }
 
@@ -53,18 +61,21 @@ $(document).ready(function() {
             $("#score span").text(userGuess);
             console.log("User Guess:" + userGuess);
             points();
+  
     });
     $("#cristal-2" ).click(function() {
             userGuess = userGuess + cristalTwoValue;
             $("#score span").text(userGuess);
             console.log("User Guess:" + userGuess);
             points();
+   
     });
     $("#cristal-3" ).click(function() {
             userGuess = userGuess + cristalThreeValue;
             $("#score span").text(userGuess);
             console.log("User Guess:" + userGuess);
             points();
+  
     });
     $("#cristal-4" ).click(function() {
             userGuess = userGuess + cristalFourValue;
