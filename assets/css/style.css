@@ -33,10 +33,11 @@ p{
     background: #ea4d63;
     text-align: center;
     font-size: 70px;
-    padding: 0px 10px 20px;
+    padding: 20px 10px 20px;
     line-height: 110px;
     height: 150px;
     border-radius: 40px;
+    color: #fff;
 }
 #score{
     background: teal;
@@ -47,6 +48,11 @@ p{
     height: 150px;
     border-radius: 40px;
     color: #fff;
+}
+
+#score span {
+    display: block;
+    margin-top: -24px;
 }
 .top-section{
     border-bottom: solid thin teal;

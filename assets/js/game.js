@@ -12,11 +12,34 @@ $(document).ready(function() {
     console.log(cristalTwoValue);
     console.log(cristalThreeValue);
     console.log(cristalFourValue);
+    console.log(userGuess);
     
     $("#wins").text(wins);
     $("#losses").text(losses);
     $("#random-num").text(randomNum);
 
+    $("#cristal-1" ).click(function() {
+            userGuess = userGuess + cristalOneValue;
+            $("#score span").text(userGuess);
+            console.log("User Guess:" + userGuess);
+    });
+    $("#cristal-2" ).click(function() {
+            userGuess = userGuess + cristalTwoValue;
+            $("#score span").text(userGuess);
+            console.log("User Guess:" + userGuess);
+    });
+    $("#cristal-3" ).click(function() {
+            userGuess = userGuess + cristalThreeValue;
+            $("#score span").text(userGuess);
+            console.log("User Guess:" + userGuess);
+    });
+    $("#cristal-4" ).click(function() {
+            userGuess = userGuess + cristalFourValue;
+            $("#score span").text(userGuess);
+            console.log("User Guess:" + userGuess);
+    });
     
     
+    //game();
+
 });
