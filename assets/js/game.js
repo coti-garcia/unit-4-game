@@ -8,13 +8,6 @@ $(document).ready(function() {
     let cristalFourValue = Math.floor((Math.random() * 12) + 1);
     let userGuess = 0;
 
-    console.log(cristalOneValue);
-    console.log(cristalTwoValue);
-    console.log(cristalThreeValue);
-    console.log(cristalFourValue);
-    console.log(userGuess);
-    
-
     $("#wins").text(wins);
     $("#losses").text(losses);
     $("#random-num").text(randomNum);
@@ -28,13 +21,7 @@ $(document).ready(function() {
         cristalFourValue = Math.floor((Math.random() * 12) + 1);
         $("#random-num").text(randomNum);
         $("#score span").text(userGuess);
-        console.log(cristalOneValue);
-        console.log(cristalTwoValue);
-        console.log(cristalThreeValue);
-        console.log(cristalFourValue);
-        console.log(userGuess);
     }
-
 
     function points(){
         if(userGuess === randomNum ){
@@ -59,34 +46,26 @@ $(document).ready(function() {
     $("#cristal-1" ).click(function() {
             userGuess = userGuess + cristalOneValue;
             $("#score span").text(userGuess);
-            console.log("User Guess:" + userGuess);
             points();
   
     });
     $("#cristal-2" ).click(function() {
             userGuess = userGuess + cristalTwoValue;
             $("#score span").text(userGuess);
-            console.log("User Guess:" + userGuess);
             points();
    
     });
     $("#cristal-3" ).click(function() {
             userGuess = userGuess + cristalThreeValue;
             $("#score span").text(userGuess);
-            console.log("User Guess:" + userGuess);
             points();
   
     });
     $("#cristal-4" ).click(function() {
             userGuess = userGuess + cristalFourValue;
             $("#score span").text(userGuess);
-            console.log("User Guess:" + userGuess);
             points();
     });
     
-
-    
-    
-    //game();
 
 });
